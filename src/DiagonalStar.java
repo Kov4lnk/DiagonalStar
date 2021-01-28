@@ -9,21 +9,11 @@ public class DiagonalStar {
 
         for (row = 0; row < number; row++){
             for (col = 0; col < number; col++){
-                if (row == 0 || row == number - 1){
-                    System.out.print("1");
-                }else if (col == 0){
-                    System.out.print("2");
-                }else if (col == number - 1){
-                    System.out.print("3");
-                }else if (col == row){
-                    System.out.print("4");
-                }else if (col == number - 1 - row){
-                    System.out.print("5");
+                if (row == 0 || row == number - 1 || col == 0|| col == number - 1 || col == row || col == number - 1 - row){
+                    System.out.print("*");
                 }else {
                     System.out.print(" ");
                 }
-
-
             }
             System.out.println();
         }
